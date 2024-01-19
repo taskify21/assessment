@@ -131,6 +131,7 @@ export const AdminOptions = ({ data }: { data: IOrder }) => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   if (status == "Pending") {
@@ -200,6 +201,7 @@ export const DeliveryOptions = ({ data }: { data: IOrder }) => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   if (status == "Ready") {
@@ -254,6 +256,7 @@ export const UserOptions = ({ data }: { data: IOrder }) => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loading]);
 
   if (status == "Pickup") {

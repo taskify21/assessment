@@ -45,11 +45,12 @@ const ListedOrder = ({ data, index }: { data: IOrder; index: number }) => {
         <div className="flex flex-col gap-4">
           {orderData.length &&
             orderData.map((order, i) => (
-              <div className="flex gap-4 items-center">
+              <div key={i} className="flex gap-4 items-center">
                 <p>
                   {i + 1}
                   {")"} {order.name} {order.quantity}X
                 </p>
+                {/* eslint-disable-next-line @next/next/no-img-element*/}
                 <img
                   src={order.coverImage}
                   className="w-[50px] rounded-[10px]"

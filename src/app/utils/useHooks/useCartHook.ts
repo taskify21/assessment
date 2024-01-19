@@ -35,6 +35,7 @@ const useCartHook = () => {
       total = total + cart.price * cart.quantity;
     });
     setTotalAmount(total);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [addCartHandler]);
 
   const incQuantity = (i: number) => {

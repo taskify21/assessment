@@ -71,6 +71,7 @@ export const MenuLists = ({
       <td className="px-6 py-4 h-full">{i + 1}</td>
 
       <td className="px-6 py-4 h-full">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={menu.coverImage} alt="" />
       </td>
       <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">

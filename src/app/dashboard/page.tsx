@@ -64,6 +64,7 @@ const Page = () => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageState]);
 
   const deleteMenu = (row: any) => {
@@ -96,6 +97,7 @@ const Page = () => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // modifying format of the orders

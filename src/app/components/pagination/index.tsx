@@ -62,6 +62,7 @@ const Pagination = ({
 
       setMainMenuListItems(paginatedList);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage, showMenus, mainMenuList.length]);
 
   return (

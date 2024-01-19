@@ -6,7 +6,7 @@ import useOrderHook from "../utils/useHooks/userOrders";
 import { OrderTabListing } from "./utils";
 import { useSession } from "next-auth/react";
 
-const page = () => {
+const Page = () => {
   // for orders
   const { data } = useSession();
   const { ordersList, getAllOrderList, setOrdersList } = useOrderHook();
@@ -29,6 +29,7 @@ const page = () => {
         console.log({ err });
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // modifying format of the orders
@@ -53,6 +54,7 @@ const page = () => {
         delivered: deliveredOrders as any,
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ordersList]);
 
   return (
@@ -64,4 +66,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -31,6 +31,7 @@ export default function AppWrapper({
     };
 
     checkAuthentication();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status]);
 
   if (!loggedIn) return <LoadingFallback />;

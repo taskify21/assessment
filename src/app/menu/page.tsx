@@ -31,6 +31,7 @@ const Page = () => {
         toast.error("Error 404 - Product fetching");
       }
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setMainMenuListItems = (result: any) =>
